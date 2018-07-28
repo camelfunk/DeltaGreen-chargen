@@ -7,7 +7,7 @@ from data import *
 print(random.choice(sex))
 
 age = int(gauss(40, 6))
-print(age)
+print("АGE", age)
 
 for x in stats:
     for i in range(num_dice):
@@ -30,5 +30,17 @@ for x in stats:
 
 print(stats)
 print("x5", factor)
+
+health = (stats['STR'] + stats['CON']) // 2 + ((stats['STR'] + stats['CON']) % 2 > 0)
+print("HP", health)
+
+willpower = stats['POW']
+print("WP", willpower)
+
+sanity = stats['POW'] * 5
+print("SAN", sanity)
+
+breakingPoint = sanity - stats['POW']
+print("BP", breakingPoint)
 
 
