@@ -1,8 +1,13 @@
 from random import randint
 import random
+from random import gauss
 from data import *
 
+
 print(random.choice(sex))
+
+age = int(gauss(40, 6))
+print(age)
 
 for x in stats:
     for i in range(num_dice):
@@ -18,10 +23,12 @@ for x in stats:
 
     num_final = num_final - num_smallest
 
-    stats[x] = num_final;
+    stats[x] = num_final
     factor.append(num_final * 5)
 
     num_final = int()
 
 print(stats)
 print("x5", factor)
+
+
