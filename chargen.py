@@ -1,11 +1,13 @@
 from random import randint
+import random
+from data import *
 
-num_sides = 6  # 6-sided die
-num_dice = 4  # number of dice to roll
-num_smallest = int()  # smallest roll
-num_final = int()  # added dice rolls together
 
-stats = ['STR', 'DEX', 'CON', 'INT', 'POW', 'CHA']
+# Anthropologist, recommended INT, Anthropology 50, Bureaucracy 40, Foreign language (1) 50, Foreign language (2) 40, History 60, Occult 40, Persuade 40
+# Choose two of these you don't already have: Archeology 40, HUMINT 50, Navigate 50, Ride 50, Search 60, Survival 50
+
+
+print(random.choice(sex))
 
 for x in stats:
     for i in range(num_dice):
@@ -21,5 +23,5 @@ for x in stats:
 
     num_final = num_final - num_smallest
 
-    print(x, num_final)
+    print(x, num_final, " x5", num_final * 5)
     num_final = int()
