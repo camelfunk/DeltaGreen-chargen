@@ -8,7 +8,7 @@ factor = []
 
 
 sex = ['Male', 'Female']
-age = ()
+age = int()
 
 profession = ['Anthropologist', 'Historian', 'Computer Scientist', 'Engineer', 'Federal Agent', 'Physician',
               'Scientist', 'Special Operator', 'Criminal', 'Firefighter', 'Foreign Service Officer',
