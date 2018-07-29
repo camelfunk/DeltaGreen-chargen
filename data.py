@@ -6,7 +6,6 @@ num_final = int()  # added dice rolls together
 stats = {'STR': 0, 'DEX': 0, 'CON': 0, 'INT': 0, 'POW': 0, 'CHA': 0}
 factor = []
 
-
 sex = ['Male', 'Female']
 
 profession = ['Anthropologist', 'Historian', 'Computer Scientist', 'Engineer', 'Federal Agent', 'Physician',
@@ -14,15 +13,29 @@ profession = ['Anthropologist', 'Historian', 'Computer Scientist', 'Engineer', '
               'Intelligence Analyst', 'Intelligence Case Officer', 'Lawyer', 'Business Executive', 'Media Specialist',
               'Nurse', 'Paramedic', 'Pilot', 'Sailor', 'Police Officer', 'Program Manager', 'Soldier', 'Marine']
 
-skills = {'Accounting', 'Alertness', 'Anthropology', 'Archeology', 'Art (Type)', 'Artillery', 'Athletics',
-          'Bureaucracy', 'Computer Science', 'Craft', 'Criminology', 'Demolitions', 'Disguise', 'Dodge', 'Drive',
-          'Firearms', 'First Aid', 'Foreign Language (Type)', 'Forensics', 'Heavy Machinery', 'History', 'HUMINT',
-          'Law', 'Medicine', 'Melee Weapons', 'Military Science (Type)', 'Navigate', 'Occult', 'Persuade', 'Pharmacy',
-          'Pilot (Type)', 'Psychotherapy', 'Ride', 'Science (Type)', 'Search', 'SIGINT', 'Stealth', 'Surgery',
-          'Survival', 'Swim', 'Unarmed Combat', 'Unnatural'}
+skills = {'Accounting': 10, 'Alertness': 20, 'Anthropology': 0, 'Archeology': 0, 'Art (Type)': 0, 'Athletics': 30,
+          'Artillery': 0, 'Bureaucracy': 10, 'Computer Science': 0, 'Craft (Type)': 0, 'Criminology': 10,
+          'Demolitions': 0, 'Disguise': 10, 'Dodge': 30, 'Drive': 20, 'Firearms': 20, 'First Aid': 10,
+          'Foreign Language (Type)': 0, 'Forensics': 0, 'Heavy Machinery': 10, 'Heavy Weapons': 0, 'History': 10,
+          'HUMINT': 10, 'Law': 0, 'Medicine': 0, 'Melee Weapons': 30, 'Military Science (Type)': 0,
+          'Navigate': 10, 'Occult': 10, 'Persuade': 20, 'Pharmacy': 0, 'Pilot (Type)': 0, 'Psychotherapy': 10,
+          'Ride': 10, 'Science (Type)': 0, 'Search': 20, 'SIGINT': 0, 'Stealth': 10, 'Surgery': 0,
+          'Survival': 10, 'Swim': 20, 'Unarmed Combat': 40, 'Unnatural': 0}
 
+strProfession = [profession[7], profession[8], profession[9], profession[20], profession[22], profession[23]]
 
-# Anthropologist, recommended INT, Anthropology 50, Bureaucracy 40, Foreign language (1) 50, Foreign language (2) 40,
-# History 60, Occult 40, Persuade 40
-# Choose two of these you don't already have: Archeology 40, HUMINT 50,
-# Navigate 50, Ride 50, Search 60, Survival 50
+dexProfession = [profession[5], profession[8], profession[9], profession[18], profession[19]]
+
+conProfession = [profession[4], profession[7], profession[9], profession[4], profession[20], profession[22],
+                 profession[23]]
+
+intProfession = [profession[0], profession[1], profession[2], profession[3], profession[5], profession[6],
+                 profession[10], profession[11], profession[12], profession[13], profession[14], profession[15],
+                 profession[16], profession[17], profession[18], profession[19], profession[21]]
+
+powProfession = [profession[4], profession[5], profession[7], profession[12], profession[16], profession[17],
+                 profession[20]]
+
+chaProfession = [profession[4], profession[10], profession[12], profession[13], profession[14], profession[15],
+                 profession[16], profession[17], profession[21]]
+
