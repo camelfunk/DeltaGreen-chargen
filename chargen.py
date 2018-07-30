@@ -1,8 +1,6 @@
 from random import randint
-import random
 from random import gauss
 from data import *
-from collections import OrderedDict
 
 print(random.choice(sex))
 
@@ -61,157 +59,35 @@ statGenerate = random.choice([k for k, v in stats.items() if v == maxValue])
 
 
 if statGenerate == "STR":
-    ProfessionGenerate = random.choice(strProfession)
-    print(ProfessionGenerate)
-
-    if ProfessionGenerate == profession[7]:
-        specopskillreplacement()
-
-    elif ProfessionGenerate == profession[8]:
-        criminalskillreplacement()
-
-    elif ProfessionGenerate == profession[9]:
-        firefighterskillreplacement()
-
-    elif ProfessionGenerate == profession[20]:
-        policeskillreplacement()
-
-    elif ProfessionGenerate == profession[22]:
-        soldierskillreplacement()
-
-    else:
-        marineskillreplacement()
-
+    professionGenerate = random.choice(strProfession)
 
 elif statGenerate == "DEX":
-    ProfessionGenerate = random.choice(dexProfession)
-    print(ProfessionGenerate)
-
-    if ProfessionGenerate == profession[5]:
-        physicianskillreplacement()
-
-    elif ProfessionGenerate == profession[8]:
-        criminalskillreplacement()
-
-    elif ProfessionGenerate == profession[9]:
-        firefighterskillreplacement()
-
-    else:
-        pilotskillreplacement()
+    professionGenerate = random.choice(dexProfession)
 
 elif statGenerate == "CON":
-    ProfessionGenerate = random.choice(conProfession)
-    print(ProfessionGenerate)
-
-    if ProfessionGenerate == profession[4]:
-        fagentskillreplacement()
-
-    elif ProfessionGenerate == profession[7]:
-        specopskillreplacement()
-
-    elif ProfessionGenerate == profession[9]:
-        firefighterskillreplacement()
-
-    elif ProfessionGenerate == profession[20]:
-        policeskillreplacement()
-
-    elif ProfessionGenerate == profession[22]:
-        soldierskillreplacement()
-
-    else:
-        marineskillreplacement()
-
+    professionGenerate = random.choice(conProfession)
 
 elif statGenerate == "INT":
-    ProfessionGenerate = random.choice(intProfession)
-    print(ProfessionGenerate)
-
-    if ProfessionGenerate == profession[0]:
-        anthroskillreplacement()
-
-    elif ProfessionGenerate == profession[1]:
-        historianskillreplacement()
-
-    elif ProfessionGenerate == profession[2] or ProfessionGenerate == profession[3]:
-        compsciskillreplacement()
-
-    elif ProfessionGenerate == profession[5]:
-        physicianskillreplacement()
-
-    elif ProfessionGenerate == profession[6]:
-        scientistskillreplacement()
-
-    elif ProfessionGenerate == profession[10]:
-        fsoskillreplacement()
-
-    elif ProfessionGenerate == profession[11]:
-        ianalystskillreplacement()
-
-    elif ProfessionGenerate == profession[12]:
-        icoskillreplacement()
-
-    elif ProfessionGenerate == profession[13] or ProfessionGenerate == profession[14]:
-        lawyerskillreplacement()
-
-    elif ProfessionGenerate == profession[15]:
-        mediaspecialistskillreplacement()
-
-    elif ProfessionGenerate == profession[16] or ProfessionGenerate == profession[17]:
-        nurseskillreplacement()
-
-    elif ProfessionGenerate == profession[18] or ProfessionGenerate == profession[19]:
-        pilotskillreplacement()
-
-    else:
-        progmgrskillreplacement()
-
+    professionGenerate = random.choice(intProfession)
 
 elif statGenerate == "POW":
-    ProfessionGenerate = random.choice(powProfession)
-    print(ProfessionGenerate)
-
-    if ProfessionGenerate == profession[4]:
-        fagentskillreplacement()
-
-    elif ProfessionGenerate == profession[5]:
-        physicianskillreplacement()
-
-    elif ProfessionGenerate == profession[7]:
-        specopskillreplacement()
-
-    elif ProfessionGenerate == profession[12]:
-        icoskillreplacement()
-
-    elif ProfessionGenerate == profession[16] or ProfessionGenerate == profession[17]:
-        nurseskillreplacement()
-
-    else:
-        policeskillreplacement()
-
+    professionGenerate = random.choice(powProfession)
 
 else:
-    ProfessionGenerate = random.choice(chaProfession)
-    print(ProfessionGenerate)
+    professionGenerate = random.choice(chaProfession)
 
-    if ProfessionGenerate == profession[4]:
-        fagentskillreplacement()
+print(professionGenerate)
 
-    elif ProfessionGenerate == profession[10]:
-        fsoskillreplacement()
+for k, v in profSkillReplacement.items():
+    if professionGenerate == k:
+        v()
 
-    elif ProfessionGenerate == profession[12]:
-        icoskillreplacement()
 
-    elif ProfessionGenerate == profession[13] or ProfessionGenerate == profession[14]:
-        lawyerskillreplacement()
 
-    elif ProfessionGenerate == profession[15]:
-        mediaspecialistskillreplacement()
 
-    elif ProfessionGenerate == profession[16] or ProfessionGenerate == profession[17]:
-        nurseskillreplacement()
 
-    else:
-        progmgrskillreplacement()
 
 print(skills)
+
+
+

@@ -160,6 +160,8 @@ powProfession = [profession[4], profession[5], profession[7], profession[12], pr
 chaProfession = [profession[4], profession[10], profession[12], profession[13], profession[14], profession[15],
                  profession[16], profession[17], profession[21]]
 
+professionGenerate = ()
+
 # Updated over base skills after profession generated
 
 anthropologistSkills = {'Anthropology': 50, 'Bureaucracy': 40, 'History': 60, 'Occult': 40, 'Persuade': 40,
@@ -258,3 +260,16 @@ marineSkills = {'Alertness': 50, 'Athletics': 50, 'Bureaucracy': 30, 'Drive': 40
 marineOptionalSkills = {'Artillery': 40, 'Computer Science': 40, 'Craft (choose one)': 40, 'Demolitions': 40,
                         'Foreign Language (choose one)': 40, 'Heavy Machinery': 50, 'Heavy Weapons': 40, 'Search': 60,
                         'SIGINT': 40, 'Swim': 60}
+
+profSkillReplacement = {profession[0]: anthroskillreplacement, profession[1]: historianskillreplacement,
+                        profession[2]: compsciskillreplacement, profession[3]: compsciskillreplacement,
+                        profession[4]: fagentskillreplacement, profession[5]: physicianskillreplacement,
+                        profession[6]: scientistskillreplacement, profession[7]: specopskillreplacement,
+                        profession[8]: criminalskillreplacement, profession[9]: firefighterskillreplacement,
+                        profession[10]: fsoskillreplacement, profession[11]: ianalystskillreplacement,
+                        profession[12]: icoskillreplacement, profession[13]: lawyerskillreplacement,
+                        profession[14]: lawyerskillreplacement, profession[15]: mediaspecialistskillreplacement,
+                        profession[16]: nurseskillreplacement, profession[17]: nurseskillreplacement,
+                        profession[18]: pilotskillreplacement, profession[19]: pilotskillreplacement,
+                        profession[20]: policeskillreplacement, profession[21]: progmgrskillreplacement,
+                        profession[22]: soldierskillreplacement, profession[23]: marineskillreplacement}
